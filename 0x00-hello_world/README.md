@@ -8,3 +8,4 @@ cisfun script: compiles C files and save them with cisfun
 2nd C program: uses the printf function
 3rd C program: C program that prints the size of various types on the computer it is compiled and run on
 intel syntax script: script that generates the assembly code (Intel syntax) of a C code and save it in an output file
+4th program: program prints a string to the standard error
