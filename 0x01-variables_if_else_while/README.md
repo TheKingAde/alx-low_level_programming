@@ -11,3 +11,4 @@ This is the readme for this directory
 9th programme -  prints all the numbers of base 16 in lowercase, followed by a new line)
 10th programme - prints all possible combinations of single-digit numbers
 11th programme -  prints all possible different combinations of two digits
+12th programme - prints all possible different combinations of three digits
