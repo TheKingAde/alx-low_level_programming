@@ -6,4 +6,6 @@ This is the readme for this directory
 4th programme -  prints the alphabet in lowercase, and then in uppercase, followed by a new line
 5th programme -  prints the alphabet in lowercase, followed by a new line(Prints all the letters except q and e)
 6th programme - prints all single digit numbers of base 10 starting from 0, followed by a new line(using printf)
-7th programme - prints all single digit numbers of base 10 starting from 0, followed by a new line(using putchar)
+7th programme - prints all single digit numbers of base 10 starting from 0, followed by a new line(using putchar
+8th programme - prints the lowercase alphabet in reverse, followed by a new line
+)
