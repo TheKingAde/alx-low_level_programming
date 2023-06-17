@@ -10,3 +10,4 @@ This is the readme for this directory
 8th programme - prints the lowercase alphabet in reverse, followed by a new line
 9th programme -  prints all the numbers of base 16 in lowercase, followed by a new line)
 10th programme - prints all possible combinations of single-digit numbers
+11th programme -  prints all possible different combinations of two digits
