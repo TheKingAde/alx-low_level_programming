@@ -1,12 +1,17 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - check the code
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	int alphabets;
+	for (alphabets = 97; alphabets <= 122; alphabets++)
+	{
+		putchar(alphabets);
+	}
+	putchar('\n');
 }
