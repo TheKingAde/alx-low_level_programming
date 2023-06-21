@@ -5,3 +5,4 @@ This is the readme for C functions and nested loops programmes
 3rd programme - prints 10 times the alphabet, in lowercase, followed by a new line
 4th programme - checks for lower case character
 5th programme - checks for alphabetic character
+6th programme - prints the sign of a number
