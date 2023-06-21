@@ -14,7 +14,7 @@ void print_alphabet_x10(void)
 	{
 	for (b = 0; str[b] != '\0'; b++)
 	{
-		putchar('b');
+		putchar(str[b]);
 	}
 		putchar('\n');
 	}
