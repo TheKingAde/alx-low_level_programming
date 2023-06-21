@@ -11,13 +11,11 @@ int _islower(int c)
 {
 	int result;
 
-	if (_islower(c))
+	if (c >= 'a' && c <= 'z')
 	{
-		_putchar('1');
 		result = 1;
 	} else
 	{
-		_putchar('0');
 		result = 0;
 	}
 	return (result);
