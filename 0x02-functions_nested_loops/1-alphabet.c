@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabets - Entry point
  *
  * Return: Always 0 (Success)
  */
-void print_alphabets(void)
+void print_alphabet(void)
 {
 	int alphabets;
 
