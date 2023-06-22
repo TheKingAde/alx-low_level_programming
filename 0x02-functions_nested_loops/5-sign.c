@@ -1,19 +1,17 @@
 #include "main.h"
 
 /**
- * print_sign - prints ths sign of a number
+ * print_sign - Entry point
  * @n: the number to check
  *
- * return: 1 and prints '+' if n is greater than zero,
- * prints '0' if n is zero
- * and prints '-' if n is less than zero
+ * Return: result
  *
  */
 int print_sign(int n)
 {
 	int result;
 
-	if(n > 0)
+	if (n > 0)
 	{
 		_putchar('+');
 		result = 1;
@@ -22,7 +20,8 @@ int print_sign(int n)
 	{
 		_putchar('0');
 		result = 0;
-	} else {
+	} else
+	{
 		_putchar('-');
 		result = -1;
 	}
