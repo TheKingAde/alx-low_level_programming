@@ -2,9 +2,9 @@
 
 /**
  * _puts - Entry
- * @str: string of ch
+ * @str: string
  *
- * Return - if sucess and 0 otherwise
+ * Return: string if success and otherwise if fail
  */
 void _puts(char *str)
 {
