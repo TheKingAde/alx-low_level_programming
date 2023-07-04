@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strchar - Entry
+ * _strchr - Entry
  * @s: string
  * @c: character
  *
