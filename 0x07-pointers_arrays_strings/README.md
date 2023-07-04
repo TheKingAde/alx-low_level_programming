@@ -9,3 +9,4 @@ fifth function -  searches a string for any of a set of bytes.
 sixth function - locates a substring.
 seventh function -  prints the chessboard
 eight function -  prints the sum of the two diagonals of a square matrix of integers.
+nineth function -  sets the value of a pointer to a char
