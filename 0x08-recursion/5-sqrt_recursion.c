@@ -22,7 +22,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt1 - Entry
+ * sqrt_helper - Entry
  * @n: integer
  * @st: start
  * @ed: end
