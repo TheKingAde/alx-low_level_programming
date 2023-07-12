@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - prints its name
- * @argc - counter
- * @argv - pointer
+ * main: Entry
+ * @argc: counter
+ * @argv: pointer to char
  *
- * Return - integer
+ * Return: integer
  */
 int main(int __attribute__((unused))argc, char *argv[])
 {
