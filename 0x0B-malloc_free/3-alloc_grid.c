@@ -1,16 +1,19 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * alloc_grid - Entry
  * @width: width
  * @height: height
  *
- * Return: xhar pointer
+ * Return: char pointer
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j, k;
+	int i;
+	int j;
+	int k;
 	int **grid;
 
 	if (width <= 0 || height <= 0)
@@ -18,7 +21,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	grid = (int **)malloc(height * sizeof(int));
+	grid = (int **)malloc(height * sizeof(int *));
 
 	if (grid == NULL)
 	{
@@ -30,15 +33,15 @@ int **alloc_grid(int width, int height)
 
 		if (grid[i] == NULL)
 		{
-			for (j = 0; j < i; j++)
+			for (k = i; k >= 0; k--)
 			{
-				free(grid[j]);
+				free(grid[k]);
 			}
 		free(grid);
 		return (NULL);
 		}
-		for (k = 0; k < width; k++)
-			grid[i][k] = 0;
+		for (j = 0; j < width; j++)
+			grid[i][j] = 0;
 	}
 	return (grid);
 }
