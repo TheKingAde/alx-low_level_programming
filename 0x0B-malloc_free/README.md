@@ -5,3 +5,4 @@ second func =  returns a pointer to a newly allocated space in memory, which con
 third func = concatenates two strings
 fourth func =  returns a pointer to a 2 dimensional array of integers
 fifth func =  frees a 2 dimensional grid previously created
+sixth func =  concatenates all the arguments
