@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * printnumber: Entry
+ * printnumber - Entry
  * @num: number
  *
  */
@@ -16,7 +16,7 @@ void printnumber(int num)
 }
 
 /**
- * main: Entry
+ * main - Entry
  * @argc: counter
  * @argv: char pointer
  *

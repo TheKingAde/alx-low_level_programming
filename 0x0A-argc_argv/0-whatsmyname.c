@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main: Entry
+ * main - Entry
  * @argc: counter
  * @argv: pointer to char
  *
