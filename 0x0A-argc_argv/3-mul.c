@@ -12,7 +12,7 @@ void printnum(int num);
 int main(int argc, char __attribute__((unused)) *argv[])
 {
 	int number1 = 0;
-        int number2 = 0;
+	int number2 = 0;
 	int i;
 	int res;
 
