@@ -6,6 +6,7 @@
  * @nmemb: array of elements
  * @size: size of array in bytes
  *
+ * Return: pointer if success otherwise fail
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -27,7 +28,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	
+
 	byte_pointer = (unsigned char *)pointer;
 
 	while (i < t_size)
