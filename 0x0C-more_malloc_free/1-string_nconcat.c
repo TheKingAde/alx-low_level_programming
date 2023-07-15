@@ -2,7 +2,6 @@
 #include "main.h"
 
 /**
- *
  * string_nconcat - concatenates two strings
  * @s1: string one
  * @s2: string two
@@ -26,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		length1++;
 
 	length2 = 0;
-	while(s2[length2] != '\0')
+	while (s2[length2] != '\0')
 		length2++;
 
 	if (n > length2)
