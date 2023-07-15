@@ -37,5 +37,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		byte_pointer[i] = 0;
 	}
-	return (pointer);
+	return ((void *)pointer);
 }
