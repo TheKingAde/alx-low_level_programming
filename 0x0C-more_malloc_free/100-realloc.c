@@ -7,6 +7,7 @@
  * @old_size: old size
  * @new_size: new size
  *
+ * Return: char pointer
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
@@ -29,7 +30,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (ptr != NULL)
 	{
 		old_ptr = (unsigned char *)ptr;
-		new_ptr_size =(unsigned char *) new_ptr;
+		new_ptr_size = (unsigned char *) new_ptr;
 
 		min_size = old_size < new_size ? old_size : new_size;
 		for (i = 0; i < min_size; i++)
