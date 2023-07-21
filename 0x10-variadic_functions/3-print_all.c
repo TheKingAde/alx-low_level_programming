@@ -47,10 +47,7 @@ void print_string(va_list argument)
 	char *value;
 
 	value = va_arg(argument, char *);
-	if (value == NULL)
-		printf("(nil)");
-	else
-		printf("%s", value);
+	printf("%s", (value ? value : "(nil)"));
 }
 /**
  * typedef - entry
