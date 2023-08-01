@@ -17,7 +17,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 
 	new_addr->n = n;
-	new_addr->next= *head;
+	new_addr->next = *head;
 	*head = new_addr;
 
 	return (new_addr);
