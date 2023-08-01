@@ -7,3 +7,4 @@ This is the read me for the alx more singly linked list project tasks
 5th func = frees a list
 6th func = frees a list
 7th func = deletes the head node of a list
+8th func = returns nth number of node
