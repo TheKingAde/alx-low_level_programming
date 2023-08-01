@@ -6,4 +6,4 @@ This is the read me for the alx more singly linked list project tasks
 4th func = adds a node at the end of the list
 5th func = frees a list
 6th func = frees a list
-
+7th func = deletes the head node of a list
