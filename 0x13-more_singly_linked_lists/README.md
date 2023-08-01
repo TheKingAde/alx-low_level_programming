@@ -8,3 +8,4 @@ This is the read me for the alx more singly linked list project tasks
 6th func = frees a list
 7th func = deletes the head node of a list
 8th func = returns nth number of node
+9th func = sums the data in a list (integer)
