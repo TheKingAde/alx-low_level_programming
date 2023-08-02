@@ -10,4 +10,5 @@ This is the read me for the alx more singly linked list project tasks
 8th func = returns nth number of node
 9th func = sums the data in a list (integer)
 10th func = adds a node at a particular point in a list
+delete node func = deletes a node at an index
 12th func = reverses a linked list
