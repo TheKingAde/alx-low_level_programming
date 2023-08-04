@@ -13,3 +13,5 @@ fifth function (clear bit)
 		sets a bit at a particular index to 0
 sixth function
 		returns the number of bits you would need to flip to get from one number to another
+seventh function
+		checks the endianness
