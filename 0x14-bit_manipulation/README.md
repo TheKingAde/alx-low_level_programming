@@ -7,3 +7,5 @@ second function (print_binary)
 		prints the binary representation of integers
 third function (get_bit)
 		gets a bit at a particular index
+fourth function (sets_bit)
+		sets a bit at a particular index to 1
