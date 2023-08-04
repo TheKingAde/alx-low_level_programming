@@ -5,4 +5,5 @@ first function (binary_to_uint)
 		converts binary to integer
 second function (print_binary)
 		prints the binary representation of integers
-
+third function (get_bit)
+		gets a bit at a particular index
