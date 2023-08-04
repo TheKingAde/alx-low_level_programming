@@ -9,3 +9,5 @@ third function (get_bit)
 		gets a bit at a particular index
 fourth function (sets_bit)
 		sets a bit at a particular index to 1
+fifth function (clear bit)
+		sets a bit at a particular index to 0
