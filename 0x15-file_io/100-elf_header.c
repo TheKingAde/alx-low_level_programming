@@ -3,7 +3,10 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <elf.h>
-
+#define IS_ELF(header) (header.e_ident[EI_MAG0] == ELFMAG0 && \
+			header.e_ident[EI_MAG1] == ELFMAG1 && \
+			header.e_ident[EI_MAG2] == ELFMAG2 && \
+			header.e_ident[EI_MAG3] == ELFMAG3)
 /**
  * print_magic - Prints the magic number of an ELF header
  * @header: Pointer to ELF header
@@ -138,7 +141,8 @@ void print_osabi(Elf64_Ehdr *header)
  */
 void print_abiversion(Elf64_Ehdr *header)
 {
-	printf("  ABI Version:                       %d\n", header->e_ident[EI_ABIVERSION]);
+	printf("  ABI Version:                       %d\n",
+			header->e_ident[EI_ABIVERSION]);
 }
 
 /**
@@ -213,9 +217,7 @@ int main(int argc, char **argv)
 		close(fd);
 		exit(98);
 	}
-	if (bytes_read != sizeof(header) || header.e_ident[EI_MAG0] != ELFMAG0 ||
-	header.e_ident[EI_MAG1] != ELFMAG1 || header.e_ident[EI_MAG2] != ELFMAG2 ||
-	header.e_ident[EI_MAG3] != ELFMAG3)
+	if (bytes_read != sizeof(header) || !IS_ELF(header))
 	{
 		dprintf(STDERR_FILENO, "Error: %s is not an ELF file\n", argv[1]);
 		close(fd);
