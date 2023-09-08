@@ -291,12 +291,13 @@ void print_elf_header(Elf64_Ehdr *header)
  * Description: If the file is not an ELF File or
  *              the function fails - exit code 98.
  */
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	Elf64_Ehdr *header;
 	int fd;
 	ssize_t read_byte;
 
+	(void) argc;
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
@@ -318,10 +319,8 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 		exit(98);
 	}
-
 	check_elf(header->e_ident);
 	print_elf_header(header);
-
 	free(header);
 	close_elf(fd);
 	return (0);
