@@ -186,7 +186,23 @@ void print_entry(Elf64_Ehdr *header)
 {
 	printf("  Entry point address:               %#lx\n", header->e_entry);
 }
-
+/**
+ * check_elf - Checks if a file is an ELF file.
+ * @e_ident: A pointer to an array containing the ELF magic numbers.
+ *
+ * Description: If the file is not an ELF file, it exits with exit code 98.
+ */
+void check_elf(Elf64_Ehdr *header)
+{
+	if (header->e_ident[EI_MAG0] != ELFMAG0 ||
+	header->e_ident[EI_MAG1] != ELFMAG1 ||
+	header->e_ident[EI_MAG2] != ELFMAG2 ||
+	header->e_ident[EI_MAG3] != ELFMAG3)
+	{
+		dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
+		exit(98);
+	}
+}
 /**
  * main - Entry point
  * @argc: Number of arguments
@@ -217,12 +233,15 @@ int main(int argc, char **argv)
 		close(fd);
 		exit(98);
 	}
+/**
 	if (bytes_read != sizeof(header) || !IS_ELF(header))
 	{
 		dprintf(STDERR_FILENO, "Error: %s is not an ELF file\n", argv[1]);
 		close(fd);
 		exit(98);
 	}
+**/
+	check_elf(&header);
 	printf("ELF Header:\n");
 	print_magic(&header);
 	print_class(&header);
